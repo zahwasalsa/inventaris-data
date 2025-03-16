@@ -43,14 +43,14 @@ class Barang {
 }
 
 class Utility {
-    // Generic method untuk menampilkan daftar barang
+    // method generic untuk menampilkan daftar barang
     public static <T> void printList(ArrayList<T> list) {
         for (T item : list) {
             System.out.println(item);
         }
     }
     
-    // Method dengan wildcard untuk menampilkan daftar barang dengan tipe apapun
+    // method wildcard untuk menampilkan daftar barang dengan tipe apapun
     public static void displayItems(ArrayList<? extends Barang> list) {
         for (Barang b : list) {
             System.out.println(b);
